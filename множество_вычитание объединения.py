@@ -1,0 +1,6 @@
+a=set(map(int,input().split()))
+b=set(map(int,input().split()))
+c=set(map(int,input().split()))
+print(*sorted(list(c-(a|b)),reverse=True))
+print(*sorted(list(c-a.union(b)),reverse=True))
+print(*sorted(list(c.difference(a.union(b))),reverse=True))
